@@ -1,0 +1,50 @@
+
+/*** Title: Debian commands 
+ *   Author: Kaustav Ghosh
+ *   Date: 1.5.2017
+***/
+
+1. cp /etc/apt/sources.list /etc/apt/sources.list_backup
+   sed -i 's/jessie/stretch/g' /etc/apt/sources.list
+   apt update
+   apt list --upgradable
+   apt upgrade
+   apt full-upgrade
+   apt-get autoremove
+
+2. gedit /etc/sudoers
+
+3. apt-get update && apt-get install firmware-atheros
+    /** OPTIONAL **/
+    sudo -H gedit /etc/NetworkManager/NetworkManager.conf
+    sudo service network-manager restart
+
+4. sudo apt-get install gdebi
+
+5. wget http://ftp.debian.org/debian/pool/main/c/chrome-gnome-shell/chrome-gnome-shell_8-4_all.deb
+   sudo gdebi chrome-gnome-shell_8-4_all.deb
+
+6. sudo apt-get install libavcodec-extra
+
+7. sudo apt-get install ttf-mscorefonts-installer
+   sudo apt-get install ttf-freefont ttf-mscorefonts-installer ttf-bitstream-vera ttf-dejavu ttf-liberation
+   sudo apt-get install fonts-indic
+
+8. sudo apt-get install firmware-linux
+
+9. sudo apt-get install vlc
+
+10. sudo apt-get install gufw
+
+11. sudo apt-get install gparted
+
+12. sudo dpkg -i google-chrome-stable_current_amd64.deb
+    sudo apt-get install -f
+
+13. sudo apt-get install git
+
+
+
+
+
+
